@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyo
+*.pyd
+
+# Environment variables
+*.env
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+/dist
+
+# Docker
+docker-compose.override.yml
+*.tar
+*.img
+
+# macOS
+.DS_Store
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*~
+*.log
+*.sublime-workspace
+*.sublime-project
+*.iml
+*.code-workspace
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Coverage
+coverage/
+*.cover
+*.coverage
+*.lcov
+
+# Miscellaneous
+*.bak
+*.tmp
+*.pid
+*.seed
+*.pid.lock
+
+# Virtual Environment
+venv/
+env/
+.venv/
+.pytest_cache/
+
+# Pyre type checker
+.pyre/
