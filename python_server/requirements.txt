@@ -1,6 +1,8 @@
 torch
-flask
+# flask
 transformers
-redis
-requests
-requests-mock
+# requests
+# requests-mock
+fastapi
+pydantic
+uvicorn

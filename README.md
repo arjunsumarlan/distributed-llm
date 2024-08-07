@@ -102,6 +102,9 @@ Replace `<your_hugging_face_api_key>` and `<your_api_key>` with your actual API 
 │   ├── package.json
 │   └── tsconfig.json
 ├── python_server
+│   ├── models
+│   │   ├── llama3
+│   │   └── mistral2
 │   ├── app.py
 │   ├── Dockerfile
 │   ├── test_app.py
@@ -221,7 +224,7 @@ Replace `<your_hugging_face_api_key>` and `<your_api_key>` with your actual API 
 - **Body**:
   ```json
   {
-    "model_name": "llama2"
+    "model": "llama2"
   }
   ```
 - **Response**:
@@ -239,7 +242,8 @@ Replace `<your_hugging_face_api_key>` and `<your_api_key>` with your actual API 
   ```json
   {
     "query": "your-query",
-    "model_name": "llama2"
+    "model": "llama2",
+    "max_length": 500
   }
   ```
 - **Response**:

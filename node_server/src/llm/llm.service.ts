@@ -26,7 +26,7 @@ export class LlmService {
       // Notify Python server about the new session
       const response = await axios.post(
         `${this.pythonServerUrl}/select_model`,
-        { model_name: modelName },
+        { model: modelName },
       );
 
       if (response.data.error) {
@@ -86,7 +86,7 @@ export class LlmService {
 
       const response = await axios.post(`${this.pythonServerUrl}/query`, {
         query: inputWithContext,
-        model_name: modelName,
+        model: modelName,
         max_length: 8000,
       });
 
